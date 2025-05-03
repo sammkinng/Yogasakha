@@ -50,7 +50,7 @@ async def predict(video_path: str):
         
         yield f"{tm}"
         sleep(0.5)
-        yield f'Processing Video... Please wait for {int(tm)} seconds\n'
+        yield f'Processing Video... Please wait for {2*int(tm)} seconds\n'
         yield "\n"
         op = process_video(video_path)
         for p in op[0]:
